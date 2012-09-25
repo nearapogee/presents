@@ -1,0 +1,11 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+lib/presents.rb
+lib/presents/aggregate_presenter.rb
+lib/presents/application_helper_methods.rb
+lib/presents/base_presenter.rb
+lib/presents/railtie.rb
+test/test_presents.rb
