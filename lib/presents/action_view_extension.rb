@@ -1,5 +1,5 @@
 module Presents
-  module ApplicationHelperMethods
+  module ActionViewExtension
 
     # Public: Render a context in the view to wrap a model with a presenter.
     # 

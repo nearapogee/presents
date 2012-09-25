@@ -1,7 +1,9 @@
 module Presents
   class Railtie < Rails::Railtie
     initializer 'presents.include' do
-      ApplicationHelper.send :include, Presents::ApplicationHelperMethods
+      ActiveSupport.on_load(:action_view) do
+        ::ActionView::Base.send :include, Presents::ActionViewExtension
+      end
     end
   end
 end
