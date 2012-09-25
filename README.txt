@@ -14,10 +14,21 @@ Minimalist presenter pattern for Rails
 * Bulk up documentation.
 
 == SYNOPSIS:
-
+  class Foo < ActiveRecord::Base
+    # has 'name' attribute
+  end
+  
+  class FooPresenter < Presents::BasePresenter
+    presents :foo
+  
+    def name
+      foo.name.upcase
+    end
+  end
+  
   - present @foo do |_foo|
-    = @foo.do_normal
-    = _foo.do_special
+    = @foo.name # => 'My Name'
+    = _foo.name # => 'MY NAME'
 
 == REQUIREMENTS:
 
