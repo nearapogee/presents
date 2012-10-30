@@ -1,3 +1,10 @@
+=== 1.0.3 / 2012-10-29
+
+* 1 bug fix:
+
+  * fix project url in README.
+
+
 === 1.0.2 / 2012-09-25
 
 * 1 bug fix:

@@ -1,6 +1,6 @@
 = presents
 
-* https://github.com/matthewcalebsmith/presents
+* https://github.com/nearapogee/presents
 
 == DESCRIPTION:
 
