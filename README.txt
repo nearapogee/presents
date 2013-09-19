@@ -1,6 +1,6 @@
 = presents
 
-* https://github.com/matthewcalebsmith/presents
+* https://github.com/nearapogee/presents
 
 == DESCRIPTION:
 
@@ -17,15 +17,15 @@ Minimalist presenter pattern for Rails
   class Foo < ActiveRecord::Base
     # has 'name' attribute
   end
-  
+
   class FooPresenter < Presents::BasePresenter
     presents :foo
-  
+
     def name
       foo.name.upcase
     end
   end
-  
+
   - present @foo do |_foo|
     = @foo.name # => 'My Name'
     = _foo.name # => 'MY NAME'
